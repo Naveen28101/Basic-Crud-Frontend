@@ -1,7 +1,13 @@
 .App {
   text-align: center;
+  color: aliceblue;
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -28,6 +34,80 @@
   color: #61dafb;
 }
 
+/* // all user */
+.main-section {
+  display: flex;
+  /* flex-direction: column; */
+}
+.section {
+  display: flex;
+  width: 100vw;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: aliceblue;
+}
+
+.section .inner-wrapper {
+  width: 80%;
+  padding: 2rem;
+  height: 100%;
+  /* border: 2px solid red; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/* card caa */
+.outer-div {
+  background: rgb(255, 252, 252);
+  width: 20rem;
+  border-radius: 1.6rem;
+  margin: 1rem;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  /* border: 2px solid red; */
+}
+.outer-div .inner {
+  padding: 1rem;
+  flex-direction: column;
+}
+.outer-div .container .wrapper {
+  width: 100%;
+  flex-direction: column;
+}
+.outer-div .wrapper .key-value-section {
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 85%;
+  margin-top: 10px;
+  padding: 5px;
+}
+.outer-div .inner .button-section {
+  width: 100%;
+  padding-top: 1rem;
+  justify-content: space-evenly;
+}
+.key {
+  font-weight: 500;
+}
+.btn {
+  border: none;
+  outline: none;
+  background-color: royalblue;
+  width: 5rem;
+  padding: 0.5rem;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}
+button {
+  margin-top: 2rem;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
